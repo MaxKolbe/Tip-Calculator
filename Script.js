@@ -45,6 +45,10 @@ function showTip(){
   let tip = ( (customs / 100) * bills) / peoples
   let total = ( (tip * peoples) + bills ) / peoples
   
+  if(bill.length == 0 || people.length == 0 || custom.length == 0){
+    return
+  }
+  
   showAmount.innerHTML = `$${tip.toFixed(2)}`
   showTotal.innerHTML = `$${total.toFixed(2)}`
 
