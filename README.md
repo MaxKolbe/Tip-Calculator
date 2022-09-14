@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./Screenshot1.png)
-![](./Screenshot2.png)
+![](./images/Screenshot1.png)
+![](./images/Screenshot2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/MaxKolbe/Tip-Calculator)
+- Live Site URL: (https://maxkolbe.github.io/Tip-Calculator/)
+
 
 ## My process
 
