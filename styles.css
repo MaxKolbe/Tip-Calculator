@@ -1,0 +1,340 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+:root{
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/*FORM-1*/
+main{
+  background-color: var(--Light-grayish-cyan);
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo img{
+  width: 100px;
+  margin:60px 0;
+}
+.cal-body{
+  padding: 20px;
+  width: 60%;
+  background-color: var(--White);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.col-1, .col-2{
+  flex-basis: 50%;
+}
+.col-2{
+  background-color: var(--Very-dark-cyan);
+  border-radius: 10px;
+}
+.bill-box{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.bill-box label{
+  color: var(--Dark-grayish-cyan);
+  margin-bottom: 4px;
+  font-size: 12.5px;
+}
+.bill-box input{
+  width: 88%;
+  height: 36px;
+  background: var(--Very-light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--Very-dark-cyan);
+  font-size: 20px;
+  text-align: right;
+  padding: 8px;
+  cursor: pointer;
+}
+.bill-box input[type = 'text']:focus{
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: none;
+}
+.d-icon{
+  position: absolute;
+  top: 32px;
+  left: 12px;
+  font-size: 12px;
+  color: var(--Very-dark-cyan);
+}
+.percent-box{
+  margin-top: 28px;
+}
+.percent-box p{
+  margin-bottom: 4px;
+  font-size: 12.5px;
+  color: var(--Dark-grayish-cyan);
+}
+.tip-box{
+  display: grid;
+  grid-template-columns: repeat(3, 25.5%);
+  row-gap: 10px;
+  column-gap: 20px;
+}
+.tip-box button{
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+  font-size: 16px;
+  transition: .3s;
+  cursor: pointer;
+}
+.tip-box button:hover{
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+}
+.tip-box input[type = text]{
+  background: var(--Very-light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--Very-dark-cyan);
+  font-size: 18px;
+  text-align: right;
+  cursor: pointer;
+  padding-right: 12px;
+}
+.tip-box input[type = text]:focus{
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: none;
+}
+.people-box{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 28px;
+}
+.people-box label{
+  color: var(--Dark-grayish-cyan);
+  margin-bottom: 4px;
+  font-size: 12.5px;
+}
+.people-box input{
+  width: 88%;
+  height: 36px;
+  background: var(--Very-light-grayish-cyan);
+  border: none;
+  border-radius: 5px;
+  color: var(--Very-dark-cyan);
+  font-size: 20px;
+  text-align: right;
+  padding: 8px;
+  cursor: pointer;
+}
+.people-box input[type = 'text']:focus{
+  border: 2px solid hsl(172, 67%, 45%);
+  outline: none;
+}
+.p-icon{
+  position: absolute;
+  top: 32px;
+  left: 12px;
+  font-size: 12px;
+  color: var(--Very-dark-cyan);
+}
+#rf1{
+ color: red;
+ margin-left: 200px;
+ position: absolute;
+ bottom: 36px;
+ display: none;
+}
+#rf2{
+  color: red;
+  margin-left: 200px;
+  bottom: 36px;
+  display: none;
+  position: absolute;
+}
+
+/*FORM-2*/
+.col-2{
+  text-align: center;
+  padding: 25px 20px;
+}
+.main-cal{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px; 
+  margin-left: 28px;
+  margin-right: 28px;
+  text-align: center;
+}
+.main-cal h1{
+  color: var(--Strong-cyan);
+  font-size: 36px;
+}
+.col-2 button{
+  margin-top: 15%;
+  width: 90%;
+  height: 36px;
+  border: none;
+  font-size: 18px;
+  color: var(--Very-dark-cyan);
+  background-color: var(--Strong-cyan);
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 4px;
+}
+.col-2 button:hover{
+  background-color: var(--Light-grayish-cyan);
+}
+.main-cal span{
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.main-cal span h6{
+  color: var(--White);
+  font-size: 12.5px;
+}
+.main-cal span p{
+  font-size: 11px;
+  color: var(--Dark-grayish-cyan);
+}
+#sp1 p{
+  margin-right: 20px;
+}
+#sp2 h6{
+  margin-right: 16px;
+}
+
+/*MEDIA-QUERIES*/
+@media only screen and (max-width: 1170px){
+  .cal-body{
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 1030px){
+  .cal-body{
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 910px){
+  .cal-body{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px){
+  .cal-body{
+    width: 98%;
+  }
+}
+@media only screen and (max-width: 730px){
+  main{
+    height: 100%;
+  }
+  .logo img{
+    margin: 20px 0;
+    width: 70px;
+  }
+  .cal-body{
+    width: 70%;
+    margin-bottom: 60px;
+  }
+  .col-1, .col-2{
+    flex-basis: 100%;
+  }
+  .bill-box input{
+    width: 100%;
+  }
+  .people-box input{
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .tip-box{
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    row-gap: 8px;
+    column-gap: 16px;
+  }
+  .tip-box input[type = text]{
+    padding-right: 40px;
+  }
+  .col-2 button{
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 590px){
+  .cal-body{
+    width: 100%;
+    margin-bottom: 0px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+  .tip-box{
+    grid-template-columns: repeat(2, 48.5%);
+    row-gap: 16px;
+  }
+  .bill-box label{
+    font-size: 16px;
+  }
+  .d-icon{
+    top: 36px
+  }
+  .percent-box p{
+    font-size: 16px;
+  }
+  .tip-box input[type = text]{
+    padding-right: 90px;
+  }
+  .people-box label{
+    font-size: 16px;
+  }
+  .main-cal{
+    margin-top: 16px; 
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  .p-icon{
+    top: 36px;
+  }
+  #rf2{
+    bottom: 60px;
+  }
+}
+@media only screen and (max-width: 395px){
+  .tip-box{
+    grid-template-columns: repeat(2, 48%);
+  }
+  .bill-box input{
+    width: 100%;
+  }
+  .people-box input{
+    width: 100%;
+  }
+  .p-icon{
+    top: 36px;
+  }
+  .tip-box input[type = text]{
+    padding-right: 50px;
+  }
+}

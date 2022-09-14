@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5e2b46074f.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/MaxKolbe">Maxmillian</a>.
+    </div>
+    <section>
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo">
+      </div>
+      <div class="cal-body">
+        <form action="" class="col-1" id="frm1">
+          <div class="bill-box">
+            <label for="bill">Bill <span id="rf1"></span></label>
+            <img src="./images/icon-dollar.svg" alt="dollar" class="d-icon">
+            <input type="text" onkeyup="validateInputMoney()" id="bill">
+          </div>
+          <div class="percent-box">
+            <p>Select Tip %</p>
+            <div class="tip-box">
+                <button type="button" id="btn" class="btn">5%</button>
+                <button type="button" class="btn">10%</button>
+                <button type="button" class="btn">15%</button>
+                <button type="button" class="btn">25%</button>
+                <button type="button" class="btn">50%</button>
+                <input type="text" placeholder="Custom" onkeyup="showTip()" id="custom">
+            </div>
+          </div>
+          <div class="people-box">
+            <label for="people">Number Of People <span id="rf2"></span></label>
+            <img src="./images/icon-person.svg" alt="dollar" class="p-icon">
+            <input type="text" onkeyup="validateInputPeople()" id="people">
+          </div>
+        </form>
+        <form action="" class="col-2" id="frm2">
+          <div class="main-cal">
+            <span id="sp1">
+              <h6>Tip Amount</h6>
+              <p>/ person</p>
+            </span>
+            <h1 id="tipAmt">$0.00</h1>
+          </div>
+          <div class="main-cal">
+            <span id="sp2">
+              <h6>Total</h6>
+              <p>/ person</p>
+            </span>
+            <h1 id="totPsn">$0.00</h1>
+          </div>
+          <button onclick="resetFunction()">RESET</button>
+        </form>
+      </div>
+    </section>
+  </main>
+<script src="Script.js"></script>
+</body>
+</html>
