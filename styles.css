@@ -71,7 +71,7 @@ section{
   padding: 8px;
   cursor: pointer;
 }
-.bill-box input[type = 'text']:focus{
+.bill-box input[type = 'number']:focus{
   border: 2px solid hsl(172, 67%, 45%);
   outline: none;
 }
@@ -110,7 +110,7 @@ section{
   background-color: var(--Strong-cyan);
   color: var(--Very-dark-cyan);
 }
-.tip-box input[type = text]{
+.tip-box input[type = number]{
   background: var(--Very-light-grayish-cyan);
   border: none;
   border-radius: 5px;
@@ -120,7 +120,7 @@ section{
   cursor: pointer;
   padding-right: 12px;
 }
-.tip-box input[type = text]:focus{
+.tip-box input[type = number]:focus{
   border: 2px solid hsl(172, 67%, 45%);
   outline: none;
 }
@@ -147,7 +147,7 @@ section{
   padding: 8px;
   cursor: pointer;
 }
-.people-box input[type = 'text']:focus{
+.people-box input[type = 'number']:focus{
   border: 2px solid hsl(172, 67%, 45%);
   outline: none;
 }
@@ -171,6 +171,11 @@ section{
   bottom: 36px;
   display: none;
   position: absolute;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /*FORM-2*/
@@ -276,7 +281,7 @@ section{
     row-gap: 8px;
     column-gap: 16px;
   }
-  .tip-box input[type = text]{
+  .tip-box input[type = number]{
     padding-right: 40px;
   }
   .col-2 button{
@@ -303,7 +308,7 @@ section{
   .percent-box p{
     font-size: 16px;
   }
-  .tip-box input[type = text]{
+  .tip-box input[type = number]{
     padding-right: 90px;
   }
   .people-box label{
@@ -334,7 +339,7 @@ section{
   .p-icon{
     top: 36px;
   }
-  .tip-box input[type = text]{
+  .tip-box input[type = number]{
     padding-right: 50px;
   }
 }
