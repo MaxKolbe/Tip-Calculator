@@ -27,7 +27,7 @@
           <div class="bill-box">
             <label for="bill">Bill <span id="rf1"></span></label>
             <img src="./images/icon-dollar.svg" alt="dollar" class="d-icon">
-            <input type="text" onkeyup="validateInputMoney()" id="bill">
+            <input type="number" onkeyup="validateInputMoney()" id="bill" placeholder="0">
           </div>
           <div class="percent-box">
             <p>Select Tip %</p>
@@ -37,13 +37,13 @@
                 <button type="button" class="btn">15%</button>
                 <button type="button" class="btn">25%</button>
                 <button type="button" class="btn">50%</button>
-                <input type="text" placeholder="Custom" onkeyup="showTip()" id="custom">
+                <input type="number" placeholder="Custom" onkeyup="showTip()" id="custom">
             </div>
           </div>
           <div class="people-box">
             <label for="people">Number Of People <span id="rf2"></span></label>
             <img src="./images/icon-person.svg" alt="dollar" class="p-icon">
-            <input type="text" onkeyup="validateInputPeople()" id="people">
+            <input type="number" onkeyup="validateInputPeople()" id="people" placeholder="0"> 
           </div>
         </form>
         <form action="" class="col-2" id="frm2">
